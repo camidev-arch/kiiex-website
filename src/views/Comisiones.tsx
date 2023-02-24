@@ -12,15 +12,15 @@ const tyccontent = () => {
         
         <h1 style={{textAlign:'center', marginBottom:'7%'}} >Comisiones </h1>
         <h3 style={{textAlign:'center', marginBottom:'3%'}} >Comisiones Spot </h3>
-        <div style={{overflowX: 'hidden'}}>
+        <div className='img-comision-container'>
         <img style={{margin:'auto', display: 'block'}} src={fee1} width="" height="400px" alt="Descripción de la imagen" />
         </div>
         <h3 style={{textAlign:'center', marginBottom:'3%', marginTop:'7%'}} >Comisiones Stablecoin </h3>
-        <div style={{overflowX: 'hidden'}}>
+        <div className='img-comision-container'>
         <img style={{margin:'auto', display: 'block'}} src={fee2} width="" height="400px" alt="Descripción de la imagen" />
         </div>
         <h3 style={{textAlign:'center', marginBottom:'3%', marginTop:'7%'}} >Comisiones USDT </h3>
-        <div style={{overflowX: 'hidden'}}>
+        <div className='img-comision-container'>
         <img style={{margin:'auto', display: 'block', marginBottom:'10%'}} src={fee3} width="" height="400px" alt="Descripción de la imagen" />
         </div>
         

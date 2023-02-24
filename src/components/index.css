@@ -93,6 +93,13 @@
   outline-bottom: 0;
 }
 
+.img-comision-container{
+  overflow-x: scroll;
+}
+.img-comision-container::-webkit-scrollbar {
+  display: none !important;
+ }
+
 .row-center {
   width: 100% !important;
   display: flex !important;

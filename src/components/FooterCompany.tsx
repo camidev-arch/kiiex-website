@@ -261,32 +261,31 @@ const FooterCompany = () => {
                 </Grid>
                 <Grid className='text-center' item lg={12} style={{ display: 'flex', justifyContent: 'start', width: '100%', flexDirection: 'column', alignItems: 'center' }}>
                     <Title className='title-footer' level={2} style={{ paddingTop: '10px' }}>
-                        Acerca de KiiEx
+                        Sobre KiiEx
                     </Title>
                     <ul className='footerMain' style={{ listStyle: 'none', padding:0 }}>
 
-                        <li className='list-item'>
-                            <NavLink to={location.pathname == '/cuentaEmpresa' ? '/' : '/cuentaEmpresa'}>
+                    <li className='list-item'>
+                            <NavLink to={location.pathname == '/cuentaEmpresa' ? '/' :  location.pathname == '/personas' ? '/':  '/cuentaEmpresa'}>
                                 <Typography className='p-one menuItem'>
-                                    {location.pathname == '/cuentaEmpresa' ? 'Inicio' : 'Empresa'}
+                                    {location.pathname == '/cuentaEmpresa' ? 'Inicio' : location.pathname == '/personas' ? 'Inicio':  'Empresa'}
                                 </Typography>
                             </NavLink>
 
                         </li>
                         <li className='list-item'>
-                            <Typography className='p-one menuItem'>
-                                Kii.global
-                            </Typography>
+                        <NavLink to={location.pathname == '/personas' ? '/cuentaEmpresa' : '/personas'}>
+                                <Typography className='p-one menuItem'>
+                                    {location.pathname == '/personas' ? 'Empresa' : 'Personas'}
+                                </Typography>
+                            </NavLink>
                         </li >
                         <li className='list-item'>
+                        <NavLink to={location.pathname == '/comisiones' ? '/comisiones' : '/comisiones'}>
                             <Typography className='p-one menuItem'>
-                                Terminos de uso
+                                Comisiones
                             </Typography>
-                        </li>
-                        <li className='list-item'>
-                            <Typography className='p-one menuItem'>
-                                Politica de Privacidad
-                            </Typography>
+                        </NavLink>
                         </li>
                     </ul>
                 </Grid>
@@ -295,24 +294,19 @@ const FooterCompany = () => {
                         Servicios
                     </Title>
                     <ul className='footerMain' style={{ listStyle: 'none',padding:0 }}>
-                        <li className='list-item'>
+                    <li className='list-item'>
                             <Typography className='p-one menuItem'>
-                                Foro de Soporte
+                                Tutoriales
                             </Typography>
                         </li>
                         <li className='list-item'>
                             <Typography className='p-one menuItem'>
-                                Desarrolladores
+                                Comunidad
                             </Typography>
                         </li>
                         <li className='list-item'>
                             <Typography className='p-one menuItem'>
-                                Ayuda Tecnica
-                            </Typography>
-                        </li>
-                        <li className='list-item'>
-                            <Typography className='p-one menuItem'>
-                                Enviar una solicitud
+                                Blog de noticias
                             </Typography>
                         </li>
                     </ul>
@@ -322,14 +316,9 @@ const FooterCompany = () => {
                         Learn
                     </Title>
                     <ul style={{ listStyle: 'none', padding:0 }}>
-                        <li className='list-item'>
+                    <li className='list-item'>
                             <Typography className='p-one menuItem'>
                                 Tutoriales
-                            </Typography>
-                        </li>
-                        <li className='list-item'>
-                            <Typography className='p-one menuItem'>
-                                Criptopedia
                             </Typography>
                         </li>
                         <li className='list-item'>
