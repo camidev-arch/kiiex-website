@@ -47,7 +47,7 @@ const HeaderKx = () => {
                         </div>
                         <div style={{ display: 'flex', paddingTop:'5px' }}>
                             <Link to={'/Soon'}><Typography className='menuItem3' style={{ fontWeight: 'bold',  fontSize: '17px', paddingTop:'10px' }}>Iniciar Sesion</Typography></Link>
-                            <Button onMouseOver={()=>setTextBtn('¡Muy Pronto!')} onMouseLeave={()=>{setTextBtn('Registro')}} className='boton-one-header' style={{ fontSize: '14px', height: '40px', marginTop: '3px' }}>{textBtn}</Button>
+                            <Button onMouseOver={()=>setTextBtn('¡Próximamente!')} onMouseLeave={()=>{setTextBtn('Registro')}} className='boton-one-header' style={{ fontSize: '14px', height: '40px', marginTop: '3px' }}>{textBtn}</Button>
                         </div>
 
                     </Content>

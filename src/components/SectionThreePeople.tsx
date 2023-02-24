@@ -116,7 +116,7 @@ const SectionThreePeople = () => {
                                     value={form.moneda}
                                     suffixIcon={< ></>}
                                     open={openSelects.selectMoneda}
-                                    
+                                    disabled
                                     onSelect={()=>handleSelect('selectMoneda', false)}
                                     onBlur={(e)=>{handleSelect('selectMoneda', false)}}
                                     style={{ width: '110px', }}

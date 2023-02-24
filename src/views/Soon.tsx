@@ -1,4 +1,4 @@
-import imgsoon from '../assets/Kii Exchange - Próximamente.png'
+import imgsoon from '../assets/Kii Exchange - Proximamente.png'
 import HeaderKx from '../components/HeaderKx';
 import HeaderCompany from '../components/HeaderCompany';
 import FooterCompany from '../components/FooterCompany';
