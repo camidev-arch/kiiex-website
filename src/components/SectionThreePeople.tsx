@@ -119,7 +119,7 @@ const SectionThreePeople = () => {
                                     
                                     onSelect={()=>handleSelect('selectMoneda', false)}
                                     onBlur={(e)=>{handleSelect('selectMoneda', false)}}
-                                    style={{ width: '160px', }}
+                                    style={{ width: '110px', }}
                                     onChange={(e) => { handlerChange('moneda', e) }}
                                     options={[
                                         {
@@ -132,7 +132,7 @@ const SectionThreePeople = () => {
                                     ]}
                                 />
 
-                                <Input style={{ maxWidth: '100px', marginLeft:'-15px' }} value={form.montoMinimo} type='number' min={100} maxLength={18} onChange={(e) => handlerChange('montoMinimo', e.target.value)} />
+                                <Input style={{ maxWidth: '100px', marginLeft:'-50px' }} onBlur={(e)=> Number(e.target.value) < 100 ?handlerChange('montoMinimo', 100):true} value={form.montoMinimo} type='number' min={100} maxLength={18} onChange={(e) => handlerChange('montoMinimo', e.target.value)} />
                                 
                             </Grid>
                             <Grid item xs={12} md={4} style={{ display: 'flex', justifyContent:'left', alignItems:'center'  }}>
