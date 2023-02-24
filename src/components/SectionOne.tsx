@@ -25,7 +25,7 @@ const SectionOne = () => {
                     </p>
                     <Row style={{ width: '100%' }}>
                         <Col  xs={24} md={11} lg={11}>
-                            <Input className='input-one' placeholder={'Email'}></Input>
+                            <input className='input-one' placeholder={'Email'}></input>
                         </Col>
                         <Col  xs={24} md={8} lg={8} >
                             <Button className='boton-one' style={{display:'flex', justifyContent:'space-between', width:'100%', alignItems:'center'}}>Comenzar Ahora {<ArrowRigth color={'white'} heigth='25px' width='25px' />}</Button>

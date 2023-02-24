@@ -11,6 +11,7 @@ import { IScrollContext, scrollContext } from '../ScrollProvider';
 const HeaderPeople = () => {
     const [nav, setnav] = useState(false)
     const {scrollTop} = useContext(scrollContext)  as IScrollContext
+    const [textBtn, setTextBtn] = useState('Registro')
 
     return (
         <PageHeader
@@ -48,7 +49,7 @@ const HeaderPeople = () => {
                         </div>
                         <div style={{ display: 'flex', paddingTop:scrollTop == 0 ? '5px' :undefined }}>
                             <Link to=''><Typography className={scrollTop==0 ?'menuItem3':'menuItem2'} style={{ fontWeight: 'bold',  fontSize: '17px', paddingTop:'10px' }}>Iniciar Sesion</Typography></Link>
-                            <Button className={scrollTop !=0?'boton-register2':'boton-one-header'} style={{ fontSize: '14px', height: '40px', marginTop: '3px' }}>Registro</Button>
+                            <Button onMouseOver={()=>setTextBtn('¡Muy Pronto!')} onMouseLeave={()=>{setTextBtn('Registro')}} className={scrollTop !=0?'boton-register2':'boton-one-header'} style={{ fontSize: '14px', height: '40px', marginTop: '3px'}}>{textBtn}</Button>
                         </div>
                     </Content>
                     

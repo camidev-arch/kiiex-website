@@ -178,8 +178,9 @@ background: linear-gradient(0deg, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 10
   width: 100% !important;
   border-end-end-radius: 0px !important;
   border-top-right-radius: 0px !important;
+  border: 1px solid !important;
   height: 45px !important;
-  background-color: #eaeaeb !important;
+  background-color: white !important;
 }
 
 .space-list {
@@ -231,6 +232,7 @@ background: linear-gradient(0deg, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 10
   color: white !important;
 }
 .boton-one-header {
+  width: 190px !important;
   background: #1B3C8D !important;
   border: none !important;
   border-radius: 5px !important;
@@ -615,7 +617,7 @@ object-fit: cover !important;
   transition: background-color 0.5s, color 0.5s !important;
 }
 .section-three-col{
-  display: flex; align-items: center; justify-content:center
+  display: flex; align-items: center; justify-content:right
 }
 .boton-one1:hover {
   background-color: #00044287 !important;
@@ -1199,7 +1201,7 @@ object-fit: cover !important;
     width: 80% !important;
     margin-left: 10% !important;
     height: 45px !important;
-    background-color: #eaeaeb !important;
+    background-color: white !important;
   }
   .boton-one {
     background: #1B3C8D !important;
@@ -1322,11 +1324,13 @@ object-fit: cover !important;
 
 .boton-register2 {
   margin-top: -10px;
+  width: 190px !important;
   margin-right: -60px !important;
   background-color: #000b2794 !important;
   border: none !important;
   border-radius: 5px !important;
   color: white !important;
+  text-align: center !important;
   height: 40px !important;
   font-weight: 100 !important;
   align-self: flex-start !important;
@@ -1340,6 +1344,7 @@ object-fit: cover !important;
   background-color: #00044287 !important;
   color: white !important;
 }
+.boton-register2
 .title-three-one{
   color:#00103B !important;
   font-weight: bolder !important;

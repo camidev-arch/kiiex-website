@@ -7,6 +7,8 @@ import LOGO from '../assets/icons/LOGO_KIIEX.svg'
 import './index.css'
 const HeaderKx = () => {
     const [nav, setnav] = useState(false)
+    const [textBtn, setTextBtn] = useState('Registro')
+
 
 
     return (
@@ -25,7 +27,7 @@ const HeaderKx = () => {
                         <a><Typography className='menuItem3' style={{ fontWeight: 'bold', padding: '10px', fontSize: '17px' }}>Aprende</Typography></a>
                         <a><Typography className='menuItem3' style={{ fontWeight: 'bold', padding: '10px', fontSize: '17px' }}>Soporte</Typography></a>
                         <a><Typography className='menuItem3' style={{ fontWeight: 'bold', padding: '10px', fontSize: '17px' }}>Iniciar Sesion</Typography></a>
-                        <Button className='boton-register2' style={{ fontSize: '17px', height: '40px', marginTop: '3px' }}>Registro</Button>
+                        <Button onMouseOver={()=>setTextBtn('¡Muy Pronto!')} onMouseLeave={()=>{setTextBtn('Registro')}} className='boton-register2' style={{ fontSize: '17px', height: '40px', marginTop: '3px' }}>{textBtn}</Button>
                     </Content>
                 </Drawer>
                 <Content>
@@ -45,7 +47,7 @@ const HeaderKx = () => {
                         </div>
                         <div style={{ display: 'flex', paddingTop:'5px' }}>
                             <Link to=''><Typography className='menuItem3' style={{ fontWeight: 'bold',  fontSize: '17px', paddingTop:'10px' }}>Iniciar Sesion</Typography></Link>
-                            <Button className='boton-one-header' style={{ fontSize: '14px', height: '40px', marginTop: '3px' }}>Registro</Button>
+                            <Button onMouseOver={()=>setTextBtn('¡Muy Pronto!')} onMouseLeave={()=>{setTextBtn('Registro')}} className='boton-one-header' style={{ fontSize: '14px', height: '40px', marginTop: '3px' }}>{textBtn}</Button>
                         </div>
 
                     </Content>

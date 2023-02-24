@@ -10,16 +10,21 @@ export const setearMiles = (numero: string | number) => {
     return new Intl.NumberFormat('de-DE').format(parseFloat(`${numero}`).toFixed(2) as any)
 }
 
+export const setearMiles2 = (numeroAsetear:number,nDecimales:number,  separadorMiles:string, indicadorDecimales:string) => {
+    let re = '\\d(?=(\\d{' + (3) + '})+' + (nDecimales > 0 ? '\\D' : '$') + ')',
+        num = numeroAsetear.toFixed(Math.max(0, ~~nDecimales));
+    return (indicadorDecimales ? num.replace('.', indicadorDecimales) : num).replace(new RegExp(re, 'g'), '$&' + (separadorMiles || ','));
+  }
+
 const SectionThreePeople = () => {
 
     const [form, setForm] = useState({
-        montoMinimo: 0,
-        plazoMeses:'1',
-        cripto: '1',
-        moneda: 'COP',
+        montoMinimo: 100,
+        plazoMeses:'12',
+        cripto: 'KII',
+        moneda: 'USDT',
         apy: 12,
         resultado: null,
-
     })
 
     const [APY, setAPY] = useState("")
@@ -37,7 +42,7 @@ const SectionThreePeople = () => {
     }
     useEffect(() => {
         if(form.apy !== null && form.montoMinimo) {
-            setResultado(setearMiles(Number(form.montoMinimo) * Number(form.apy) / 100))   
+            setResultado(setearMiles2((Number(form.montoMinimo) * Number(form.apy) / 100),2,',','.'))   
         }
     }, [form.montoMinimo, form.apy])
   
@@ -99,7 +104,7 @@ const SectionThreePeople = () => {
                                     onChange={(e) => { handlerChange('cripto', e);handleSelect('selectCripto', false)  }}
                                     options={[
                                         {
-                                            value: '1',
+                                            value: 'KII',
                                             label: 'KII',
                                         }
                                     ]}
@@ -109,16 +114,17 @@ const SectionThreePeople = () => {
                             <label style={{ fontSize: '18px',color:'#00103B', fontWeight: 500, minWidth: '150px',lineHeight:'20px'}}>Monto Mínimo de inversión</label>
                                 <Select
                                     value={form.moneda}
-                                    suffixIcon={<CaretDownOutlined onClick={()=>handleSelect('selectMoneda', !openSelects.selectMoneda)} />}
+                                    suffixIcon={< ></>}
                                     open={openSelects.selectMoneda}
+                                    
                                     onSelect={()=>handleSelect('selectMoneda', false)}
                                     onBlur={(e)=>{handleSelect('selectMoneda', false)}}
                                     style={{ width: '160px', }}
                                     onChange={(e) => { handlerChange('moneda', e) }}
                                     options={[
                                         {
-                                            value: 'USD',
-                                            label: 'USD',
+                                            value: 'USDT',
+                                            label: 'USDT',
                                         }, {
                                             value: 'COP',
                                             label: 'COP',
@@ -126,7 +132,7 @@ const SectionThreePeople = () => {
                                     ]}
                                 />
 
-                                <Input style={{ maxWidth: '100px', marginLeft:'-15px' }} value={form.montoMinimo} type='number' maxLength={18} onChange={(e) => handlerChange('montoMinimo', e.target.value)} />
+                                <Input style={{ maxWidth: '100px', marginLeft:'-15px' }} value={form.montoMinimo} type='number' min={100} maxLength={18} onChange={(e) => handlerChange('montoMinimo', e.target.value)} />
                                 
                             </Grid>
                             <Grid item xs={12} md={4} style={{ display: 'flex', justifyContent:'left', alignItems:'center'  }}>
@@ -142,18 +148,6 @@ const SectionThreePeople = () => {
                                     onChange={(e) => { handlerChange('plazoMeses', e);handleSelect('selectMeses', false) }}
                                     options={[
                                         {
-                                            value: '1',
-                                            label: '1',
-                                        },
-                                        {
-                                            value: '3',
-                                            label: '3',
-                                        },
-                                        {
-                                            value: '6',
-                                            label: '6',
-                                        },
-                                        {
                                             value: '12',
                                             label: '12',
                                         },
@@ -165,20 +159,25 @@ const SectionThreePeople = () => {
                                 />
                                
                             </Grid>
-                            <Grid item xs={12} md={6} style={{ display: 'flex', alignItems: 'center', flexDirection:'column', justifyContent:'left', gap:'20px' }}>
+                            <Grid item xs={12} md={5} style={{ display: 'flex', alignItems: 'center', flexDirection:'column', justifyContent:'center', gap:'20px' }}>
                                 <section className='sectionThree'>
                                 <label style={{ fontSize: '18px', color:'#00103B', fontWeight: 500, maxWidth: '150px',lineHeight:'20px', }}>Rendimiento anual (APY)</label>
-                                <label style={{ fontSize: '18px',  fontWeight: 600, maxWidth: '150px',paddingTop:'2px',paddingBottom:'2px',paddingInline:'10px',background:'white',minWidth:'120px'   }}>{APY}</label>
+                                <label style={{ fontSize: '30px', fontWeight:'bolder',color:'#2B193D',  maxWidth: '150px',paddingTop:'2px',paddingBottom:'2px',paddingInline:'10px',background:'white',minWidth:'120px'   }}>{APY}</label>
                                 </section>
                                 <section className='sectionThree'>
                                 <label style={{ fontSize: '18px', color:'#00103B', fontWeight: 500, maxWidth: '160px',lineHeight:'20px' }}>Recompensa al finalizar el plazo</label>
-                                <label style={{ fontSize: '18px', fontWeight:'bold',  maxWidth: '150px',paddingTop:'2px',paddingBottom:'2px',paddingInline:'10px',background:'white'}}>{form.moneda}</label>
-                                <label style={{ fontSize: '18px', fontWeight:'bold', maxWidth: '150px',paddingTop:'2px',paddingBottom:'2px',background:'white', minWidth:'150px' }}>{resultado}</label>
+                                <label style={{ fontSize: '30px', fontWeight:'bolder',color:'#2B193D',  maxWidth: '150px',paddingTop:'2px',paddingBottom:'2px',paddingInline:'10px',background:'white'}}>{form.cripto}</label>
+                                <label style={{ fontSize: '30px', fontWeight:'bold', color:'#8CC93E', maxWidth: '150px',paddingTop:'2px',paddingBottom:'2px',background:'white', minWidth:'150px' }}>{resultado+'+'}</label>
+                                </section>
+                                <section className='sectionThree'>
+                                <label style={{ fontSize: '18px', color:'#00103B', fontWeight: 500, maxWidth: '160px',lineHeight:'20px' }}>Recompensa al finalizar el plazo</label>
+                                <label style={{ fontSize: '30px', fontWeight:'bolder',color:'#2B193D',  maxWidth: '150px',paddingTop:'2px',paddingBottom:'2px',paddingInline:'10px',background:'white'}}>{'USDT'}</label>
+                                <label style={{ fontSize: '30px', fontWeight:'bold', color:'#8CC93E', maxWidth: '150px',paddingTop:'2px',paddingBottom:'2px',background:'white', minWidth:'150px' }}>{setearMiles2(Number(resultado)*0.20,2,',','.')+'+'}</label>
                                 </section>
                           
                             </Grid>
-                            <Grid className='section-three-col' item xs={12} md={6} style={{ }}>
-                                    <ChartBar ></ChartBar>
+                            <Grid className='section-three-col' item xs={12} md={7} style={{ }}>
+                                    <ChartBar meses={form.plazoMeses}></ChartBar>
                             </Grid>
                         </Grid>
                     </Paper>
