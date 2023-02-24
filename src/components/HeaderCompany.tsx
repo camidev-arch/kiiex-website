@@ -10,6 +10,8 @@ import { IScrollContext, scrollContext } from '../ScrollProvider';
 const HeaderCompany = () => {
     const [nav, setnav] = useState(false)
     const { scrollTop } = useContext(scrollContext) as IScrollContext
+    const [textBtn, setTextBtn] = useState('Registro')
+
 
     return (
         <PageHeader
@@ -27,7 +29,7 @@ const HeaderCompany = () => {
                         <a><Typography className='menuItem' style={{ fontWeight: 'bold', padding: '10px', fontSize: '17px' }}>Aprende</Typography></a>
                         <a><Typography className='menuItem' style={{ fontWeight: 'bold', padding: '10px', fontSize: '17px' }}>Soporte</Typography></a>
                         <a><Typography className='menuItem' style={{ fontWeight: 'bold', padding: '10px', fontSize: '17px' }}>Iniciar Sesion</Typography></a>
-                        <Button className='boton-register2' style={{ fontSize: '17px', height: '40px', marginTop: '3px' }}>Registro</Button>
+                        <Button onMouseOver={()=>setTextBtn('¡Muy Pronto!')} onMouseLeave={()=>{setTextBtn('Registro')}} className='boton-register2' style={{ fontSize: '17px', height: '40px', marginTop: '3px' }}>{textBtn}</Button>
                     </Content>
                 </Drawer>
                 <Content>
@@ -47,7 +49,7 @@ const HeaderCompany = () => {
                         </div>
                         <div style={{ display: 'flex' }}>
                             <Link to=''><Typography className='menuItem2' style={{ fontWeight: 'bold', fontSize: '17px', paddingTop: '10px' }}>Iniciar Sesion</Typography></Link>
-                            <Button className='boton-register2' style={{ fontSize: '17px', height: '40px', marginTop: '3px' }}>Registro</Button>
+                            <Button onMouseOver={()=>setTextBtn('¡Muy Pronto!')} onMouseLeave={()=>{setTextBtn('Registro')}} className='boton-register2' style={{ fontSize: '15px', height: '40px', marginTop: '3px' }}>{textBtn}</Button>
                         </div></Content>
 
                 </Content>
