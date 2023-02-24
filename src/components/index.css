@@ -93,6 +93,11 @@
   outline-bottom: 0;
 }
 
+.ant-input:focus, .ant-input:hover, .ant-input:active {
+  box-shadow: none !important;
+}
+
+
 .img-comision-container{
   overflow-x: scroll;
 }
@@ -240,7 +245,7 @@ background: linear-gradient(0deg, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 10
   color: white !important;
 }
 .boton-one-header {
-  width: 190px !important;
+  width: 210px !important;
   background: #1B3C8D !important;
   border: none !important;
   border-radius: 5px !important;
@@ -529,6 +534,7 @@ object-fit: cover !important;
   border-color:#009FE3 !important;
   border-radius: 5px !important;
   text-align: left !important;
+  color:rgb(43, 25, 61) !important;
 
 }
 .ant-select:not(.ant-select-disabled):hover .ant-select-selector {
@@ -1332,7 +1338,7 @@ object-fit: cover !important;
 
 .boton-register2 {
   margin-top: -10px;
-  width: 190px !important;
+  width: 220px !important;
   margin-right: -60px !important;
   background-color: #000b2794 !important;
   border: none !important;
@@ -1567,3 +1573,13 @@ padding-right: 9% !important;
  align-self: flex-start;
 }
 
+.ant-select-disabled {
+  background-color: #f5f5f5 !important;
+  border-color: #d9d9d9 !important;
+  color: rgba(0, 0, 0, 0.25) !important;
+  cursor: not-allowed !important;
+}
+
+.ant-select-selector{
+  color: rgba(0, 0, 0, 0.25) !important;
+}

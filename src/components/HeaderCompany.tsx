@@ -49,7 +49,7 @@ const HeaderCompany = () => {
                         </div>
                         <div style={{ display: 'flex' }}>
                             <Link to={'/Soon'}><Typography className='menuItem2' style={{ fontWeight: 'bold', fontSize: '17px', paddingTop: '10px' }}>Iniciar Sesion</Typography></Link>
-                            <Button onMouseOver={()=>setTextBtn('¡Muy Pronto!')} onMouseLeave={()=>{setTextBtn('Registro')}} className='boton-register2' style={{ fontSize: '15px', height: '40px', marginTop: '3px' }}>{textBtn}</Button>
+                            <Button onMouseOver={()=>setTextBtn('¡Próximamente!')} onMouseLeave={()=>{setTextBtn('Registro')}} className='boton-register2' style={{ fontSize: '15px', height: '40px', marginTop: '3px' }}>{textBtn}</Button>
                         </div></Content>
 
                 </Content>

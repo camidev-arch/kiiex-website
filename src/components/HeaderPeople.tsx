@@ -49,7 +49,7 @@ const HeaderPeople = () => {
                         </div>
                         <div style={{ display: 'flex', paddingTop:scrollTop == 0 ? '5px' :undefined }}>
                             <Link to={'/Soon'}><Typography className={scrollTop==0 ?'menuItem3':'menuItem2'} style={{ fontWeight: 'bold',  fontSize: '17px', paddingTop:'10px' }}>Iniciar Sesion</Typography></Link>
-                            <Button onMouseOver={()=>setTextBtn('¡Muy Pronto!')} onMouseLeave={()=>{setTextBtn('Registro')}} className={scrollTop !=0?'boton-register2':'boton-one-header'} style={{ fontSize: '14px', height: '40px', marginTop: '3px'}}>{textBtn}</Button>
+                            <Button onMouseOver={()=>setTextBtn('¡Próximamente!')} onMouseLeave={()=>{setTextBtn('Registro')}} className={scrollTop !=0?'boton-register2':'boton-one-header'} style={{ fontSize: '14px', height: '40px', marginTop: '3px'}}>{textBtn}</Button>
                         </div>
                     </Content>
                     
