@@ -12,6 +12,9 @@ import { IScrollContext, scrollContext } from './ScrollProvider';
 import { useLocation } from 'react-router-dom';
 import People from './views/People';
 import Tyc from './views/Tyc';
+import Soon from './views/Soon'
+import Comisiones from './views/Comisiones'
+import PolicyPrivacy from './views/PolicyPrivacy'
 function App() {
   const { setScrollTop } = useContext(scrollContext) as IScrollContext
   const location = useLocation()
@@ -36,6 +39,9 @@ function App() {
                 <Route path="/cuentaEmpresa" element={<CompanyAccount />} />
                 <Route path="/personas" element={<People />} />
                 <Route path="/terminosycondiciones" element={<Tyc />} />
+                <Route path="/Soon" element={<Soon />} />
+                <Route path="/politicadeprivacidad" element={<PolicyPrivacy />} />
+                <Route path="/comisiones" element={<Comisiones/>} />
               </Routes>
             </div>
           </Col>

@@ -1,6 +1,7 @@
 import { Button, Image, Typography } from 'antd'
 import Title from 'antd/lib/typography/Title'
 import logo from '../assets/icons/kiiLogoFooter.png'
+import { NavLink, useLocation } from 'react-router-dom'
 import React from 'react'
 
 const FooterM = () => {
@@ -41,7 +42,7 @@ const FooterM = () => {
                         </li>
                         <li className='space-list'>
                             <Typography  className='p-one menuItem'>
-                                Kii.global
+                                Comisiones
                             </Typography>
                         </li >
                         <li className='space-list'>
@@ -79,9 +80,11 @@ const FooterM = () => {
                             </Typography>
                         </li>
                         <li className='space-list'>
+                        <NavLink to={location.pathname == '/personas' ? '/cuentaEmpresa' : '/personas'}>
                             <Typography  className='p-one menuItem'>
-                                Terminos y Condiciones
+                                Terminos y Condiciones 
                             </Typography>
+                        </NavLink>    
                         </li>
                     </ul>
                 </div>

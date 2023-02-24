@@ -168,9 +168,11 @@ const FooterCompany = () => {
                             </NavLink>
                         </li >
                         <li className='list-item'>
+                        <NavLink to={location.pathname == '/comisiones' ? '/comisiones' : '/comisiones'}>
                             <Typography className='p-one menuItem'>
-                                Kii.global
+                                Comisiones
                             </Typography>
+                        </NavLink>
                         </li>
                         
                     </ul>
@@ -183,14 +185,18 @@ const FooterCompany = () => {
                             </Typography>
                         </li>
                         <li className='list-item'>
+                        <NavLink to={location.pathname == '/terminosycondiciones' ? '/terminosycondiciones' : '/terminosycondiciones'}>
                             <Typography className='p-one menuItem'>
-                            Terminos y Condiciones
+                            Terminos y Condiciones 
                             </Typography>
+                        </NavLink>
                         </li>
                         <li className='list-item'>
+                        <NavLink to={location.pathname == '/politicadeprivacidad' ? '/politicadeprivacidad' : '/politicadeprivacidad'}>
                             <Typography className='p-one menuItem'>
                                 Politica de privacidad
                             </Typography>
+                        </NavLink>
                         </li>
                     
                     </ul>
