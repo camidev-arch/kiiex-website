@@ -17,7 +17,7 @@ const CARDS = [
     },
     {
         title: 'Conversión Fácil',
-        description: 'Puedes cambiar tus criptomonedas por efectivo con nuestro producto gestionado por KiiEx.',
+        description: 'Puedes cambiar tus criptomonedas por efectivo con nuestro producto gestionado por KIIEX.',
         icon: (color: string) => <TransaccionEficaz width='50px' heigth='50px' color={color} />
     },
     {

@@ -22,22 +22,22 @@ const SectionFive = () => {
 
             <li>
               <h1 style={{ color: 'white', fontSize: '40px', textAlign:'left', fontWeight:'bolder' }}>
-                La forma más facil de comenzar a operar con criptomonedas
+                Nuestra comunidad crece día a día, y ser parte de ella es muy fácil:
               </h1>
             </li>
             <li>
               <Title className='five-steps' style={{ color: 'white' }} level={3}>
-                <StepOne width={'45px'} /> Crea una cuenta gratuita en Kii Exchange
+                <StepOne width={'45px'} /> Regístrate para crear una cuenta gratuita en Kii Exchange.
               </Title>
             </li>
             <li>
               <Title className='five-steps' style={{ color: 'white'}} level={3}>
-                <StepTwo width={'45px'} /> Configura un método de pago
+                <StepTwo width={'45px'} /> Configura tu método de pago.
               </Title>
             </li>
             <li>
               <Title className='five-steps' style={{ color: 'white'}} level={3}>
-                <StepThree width={'45px'} /> Compra y vende criptomonedas
+                <StepThree width={'45px'} /> Sácale el jugo a todo lo que puedes hacer con nuestro Exchange.
               </Title>
             </li>
             <li>

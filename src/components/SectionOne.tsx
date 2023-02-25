@@ -18,10 +18,11 @@ const SectionOne = () => {
             <Col className='column-one-one' xs={24} md={12} lg={12} span={12} >
                 <Card className='card-style' bodyStyle={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', width:'100%', padding:'0px' }} style={{}}>
                     <h2 className='main-title'>
-                       Compra y vende criptomonedas de la manera mas rápida y segura
+                    Comprar y vender criptomonedas 
+                    nunca fue tan seguro y rápido
                     </h2>
                     <p className='main-p' >
-                    ¡Procesa tus remesas y pagos internacionales por menos de 1% y en el mismo día!
+                    Hemos desarrollado un exchange pensado en una experiencia de usuario fácil e intuitiva. Somos la plataforma ideal para comprar, vender e intercambiar criptomonedas.
                     </p>
                     <Row style={{ width: '100%' }}>
                         <Col  xs={24} md={11} lg={11}>

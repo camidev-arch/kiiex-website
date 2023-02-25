@@ -131,7 +131,7 @@ const FooterCompany = () => {
                 </Grid>
                 <Grid item lg={3} style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
                     <Title className='title-footer' level={2} style={{ paddingTop: '10px' }}>
-                        Sobre KiiEx
+                        Sobre KIIEX
                     </Title>
                 </Grid>
                 <Grid className='title-footer' item lg={3} style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
@@ -146,7 +146,7 @@ const FooterCompany = () => {
                 </Grid>
                 <Grid item lg={3} style={{ display: 'flex', justifyContent: 'center', width: '200px', }}>
                     <p style={{ fontSize: '17px', maxWidth: '250px', marginLeft: '35px' }}>
-                        Somos el cripto exchange más seguro, rápido y facil de operar, comienza hoy mismo
+                        Somos el Exchange más seguro, rápido y fácil de usar. Cambiamos el mundo una operación a la vez.
                     </p>
                 </Grid>
                 <Grid item lg={3} style={{ display: 'flex', justifyContent: 'center', width: '100%', paddingRight: '90px' }}>

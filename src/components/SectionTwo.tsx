@@ -11,7 +11,7 @@ const SectionTwo = () => {
     <Row className='main-row-two' >
     <Col xs={24}md={16} lg={16} span={16} className='col-one-two'>
         <Title className='title-col-one-two'>
-            La mejor experiencia de trading con Kii-X Cripto Exchange
+          La mejor experiencia de trading la tienes con KIIEX
         </Title>
     </Col>
     <Col xs={24} md={8} lg={8} span={8} className='col-two-two'>
