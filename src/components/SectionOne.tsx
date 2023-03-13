@@ -6,16 +6,24 @@ import QrIcon from '../assets/icons/QrIcon'
 import ApiIcon from '../assets/icons/ApiIcon'
 import ArrowRigth from '../assets/icons/ArrowRigth'
 import RedesSociales from './RedesSociales'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 const SectionOne = () => {
     const [apple, setApple] = useState(false)
     const [qr, setQr] = useState(false)
     const [api, setApi] = useState(false)
     const [gg, setGg] = useState(false)
+
+    const myComponentRef = useRef(null);
+
+    useEffect(() => {
+      if(myComponentRef.current !== null) {
+        myComponentRef.current.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, []);
     return (
-        <Row id='top' className='main-row-one' style={{ paddingRight: '12%', paddingLeft: '11%' }}>
-            <Col className='column-one-one' xs={24} md={12} lg={12} span={12} >
+        <Row id='top' className='main-row-one' ref={myComponentRef} style={{ paddingRight: '12%', paddingLeft: '11%' }}>
+            <Col  className='column-one-one' xs={24} md={12} lg={12} span={12} >
                 <Card className='card-style' bodyStyle={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', width:'100%', padding:'0px' }} style={{}}>
                     <h1 className='main-title'>
                     #TradeConKIIEX

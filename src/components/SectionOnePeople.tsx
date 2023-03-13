@@ -1,5 +1,5 @@
 import { Button, Card, Col, Image, Input, Row } from 'antd'
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import RedesSociales from './RedesSociales'
 import fondo from '../assets/backgrounds/peopleOne.png'
 import { ArrowRightOutlined } from '@ant-design/icons'
@@ -7,8 +7,17 @@ import Title from 'antd/lib/typography/Title'
 import ArrowRigth from '../assets/icons/ArrowRigth'
 
 const SectionOnePeople = () => {
+    
+    const myComponentRef = useRef(null);
+
+    useEffect(() => {
+      if(myComponentRef.current !== null) {
+        myComponentRef.current.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, []);
+    
     return (<>
-        <Row id='top' className='main-row-one-people' >
+        <Row id='top' ref={myComponentRef} className='main-row-one-people' >
             <Col className='column-one-one' xs={24} md={12} lg={14} span={14} >
                 <Card className='card-style' bodyStyle={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', width: '90%', padding: '0px', height: '100%', }} style={{ height: '100%' }}>
                     <h1 className='main-title3' >

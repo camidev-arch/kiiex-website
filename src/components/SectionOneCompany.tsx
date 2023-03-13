@@ -15,10 +15,18 @@ import RSWS from '../assets/icons/RSWS'
 import ArrowRigth from '../assets/icons/ArrowRigth'
 import RedesSociales from './RedesSociales'
 import { ArrowRightOutlined } from '@ant-design/icons'
+import { useEffect, useRef } from 'react'
 
 const SectionOneCompany = () => {
+    const myComponentRef = useRef(null);
+
+    useEffect(() => {
+      if(myComponentRef.current !== null) {
+        myComponentRef.current.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, []);
     return (
-        <Row id='top' className='main-row-one-company' >
+        <Row id='top' ref={myComponentRef} className='main-row-one-company' >
             <Col className='column-one-one' xs={24} md={12} lg={14} span={14} >
                 <Card className='card-style' bodyStyle={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', width: '100%', padding: '0px', height: '100%' }} style={{ height: '100%' }}>
                     <h1 className='main-title2' >
