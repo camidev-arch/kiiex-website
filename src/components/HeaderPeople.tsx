@@ -25,8 +25,8 @@ const HeaderPeople = () => {
                  <Content className='content-nav2'>
                         <Link to={'/'}><Typography className='menuItem' style={{ fontWeight: 'bold', padding: '10px', fontSize:'17px' }}>Inicio</Typography></Link>
                         <Link to={'/cuentaEmpresa'}><Typography className='menuItem' style={{ fontWeight: 'bold', padding: '10px', fontSize:'17px' }}>Empresa</Typography></Link>
-                        <Link to={'/personas'}><Typography className='menuItem' style={{ fontWeight: 'bold', padding: '10px', fontSize:'17px' }}>Personas</Typography></Link>
-                        <a><Typography className='menuItem' style={{ fontWeight: 'bold', padding: '10px', fontSize:'17px' }}>Aprende</Typography></a>
+                        <Link to={'/personas/'}><Typography className='menuItem' style={{ fontWeight: 'bold', padding: '10px', fontSize:'17px' }}>Personas</Typography></Link>
+                        <Link to={'/comisiones'}><Typography className='menuItem' style={{ fontWeight: 'bold', padding: '10px', fontSize:'17px' }}>Comisiones</Typography></Link>
                         <a hrefLang='https://foro.lanzamientokii.com/'><Typography className='menuItem' style={{ fontWeight: 'bold', padding: '10px', fontSize:'17px' }}>Soporte</Typography></a>
                         <a><Typography className='menuItem' style={{ fontWeight: 'bold', padding: '10px', fontSize:'17px' }}>Iniciar Sesion</Typography></a>
                         <Button className='boton-register2' style={{fontSize:'17px',  height:'40px', marginTop:'3px'}}>Registro</Button>
@@ -42,14 +42,14 @@ const HeaderPeople = () => {
                     <Content className='content-nav'>
                             <div className="itemsMenu">
                             <Link  to={'/'}><Typography className={scrollTop==0 ?'menuItem3':'menuItem2'}  style={{ fontWeight: 'bold',  fontSize: '17px' }}>Inicio</Typography></Link>
-                            <Link  to={'/cuentaEmpresa'}><Typography className={scrollTop==0 ?'menuItem3':'menuItem2'} style={{ fontWeight: 'bold',  fontSize: '17px' }}>Empresa</Typography></Link>
+                            <Link  to={'/cuentaEmpresa/'}><Typography className={scrollTop==0 ?'menuItem3':'menuItem2'} style={{ fontWeight: 'bold',  fontSize: '17px' }}>Empresa</Typography></Link>
                             <Link  to={'/personas'}><Typography className={scrollTop==0 ?'menuItem3Active':'menuItem2Active'}  style={{ fontWeight: 'bold',  fontSize: '17px' }}>Personas</Typography></Link>
-                            <Link to=''  ><Typography className={scrollTop==0 ?'menuItem3':'menuItem2'}  style={{ fontWeight: 'bold',  fontSize: '17px' }}>Aprende</Typography></Link>
+                            <Link to={'/comisiones'}  ><Typography className={scrollTop==0 ?'menuItem3':'menuItem2'}  style={{ fontWeight: 'bold',  fontSize: '17px' }}>Comisiones</Typography></Link>
                             <a  href='https://foro.lanzamientokii.com/' target={'_blank'} ><Typography className={scrollTop==0 ?'menuItem3':'menuItem2'}  style={{ fontWeight: 'bold',  fontSize: '17px' }}>Soporte</Typography></a>
                         </div>
                         <div style={{ display: 'flex', paddingTop:scrollTop == 0 ? '5px' :undefined }}>
-                            <Link to={'/Soon'}><Typography className={scrollTop==0 ?'menuItem3':'menuItem2'} style={{ fontWeight: 'bold',  fontSize: '17px', paddingTop:'10px' }}>Iniciar Sesion</Typography></Link>
-                            <Button onMouseOver={()=>setTextBtn('¡Próximamente!')} onMouseLeave={()=>{setTextBtn('Registro')}} className={scrollTop !=0?'boton-register2':'boton-one-header'} style={{ fontSize: '14px', height: '40px', marginTop: '3px'}}>{textBtn}</Button>
+                        <a href='https://ui.kiire.apstage.net/login'><Typography className={scrollTop==0 ?'menuItem3':'menuItem2'} style={{ fontWeight: 'bold',  fontSize: '17px', paddingTop:'10px' }}>Iniciar Sesion</Typography></a>
+                        <a href='https://ui.kiire.apstage.net/signup'><Button onMouseLeave={()=>{setTextBtn('Registro')}} className={scrollTop !=0?'boton-register2':'boton-one-header'} style={{ fontSize: '14px', height: '40px', marginTop: '3px'}}>{textBtn}</Button></a>
                         </div>
                     </Content>
                     

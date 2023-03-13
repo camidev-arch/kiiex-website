@@ -21,29 +21,30 @@ const SectionFive = () => {
           <ol style={{ listStyle: 'none',  marginTop: '16%' }}>
 
             <li>
-              <h1 style={{ color: 'white', fontSize: '40px', textAlign:'left', fontWeight:'bolder' }}>
+              <h1 className="titulo5" style={{ color: 'white', fontSize: '40px', textAlign:'left', fontWeight:'bolder' }}>
                 Nuestra comunidad crece día a día, y ser parte de ella es muy fácil:
               </h1>
             </li>
             <li>
               <Title className='five-steps' style={{ color: 'white' }} level={3}>
-                <StepOne width={'45px'} /> Regístrate para crear una cuenta gratuita en Kii Exchange.
+                <StepOne width={'40px'} /> Regístrate para crear una cuenta gratuita en Kii Exchange.
               </Title>
             </li>
             <li>
               <Title className='five-steps' style={{ color: 'white'}} level={3}>
-                <StepTwo width={'45px'} /> Configura tu método de pago.
+                <StepTwo width={'40px'} /> Configura tu método de pago.
               </Title>
             </li>
             <li>
               <Title className='five-steps' style={{ color: 'white'}} level={3}>
-                <StepThree width={'45px'} /> Sácale el jugo a todo lo que puedes hacer con nuestro Exchange.
+                <StepThree width={'40px'} /> Sácale el jugo a todo lo que puedes hacer con nuestro Exchange.
               </Title>
             </li>
             <li>
-              <Button className='boton-comienza-ahora4' style={{ color: '#0F4DCC', width: '315px', height: '50px', fontWeight: 'bold', fontSize: '20px', padding: '5px', marginTop:'20px' }}>
-                ¡Comienza ahora mismo! <ArrowRigth color='#00103B' width='20px' heigth='20px' />
+            <a href='https://ui.kiire.apstage.net/signup'><Button className='boton-comienza-ahora4' style={{ color: '#0F4DCC', width: '315px', height: '50px', fontWeight: 'bold', fontSize: '18px', padding: '5px', marginTop:'20px' }}>
+               ¡Comienza ahora mismo!<ArrowRigth color='#00103B' width='20px' heigth='20px' />
               </Button>
+            </a>
             </li>
 
           </ol>

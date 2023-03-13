@@ -10,8 +10,8 @@ import CardBeneficios, { IPropsCards } from './CardBeneficios'
 const SectionThreeCompany = () => {
 
     const CARDS: IPropsCards[] = [{
-        title: 'Bajas comisiones de negociación',
-        description: 'Comisión de menos del 1% para todas las ordenes P2P. Tarifa cero hasta 2023-07-01.',
+        title: 'Baja comisión',
+        description: 'La parte favorita de los negocios, pues nuestras comisiones piensan en sus ingresos.',
         icon: <LowComision color='#1B3C8D' width='100px' heigth='100px' />
     },
     {
@@ -20,8 +20,8 @@ const SectionThreeCompany = () => {
         icon: <CustomPedido color='#1B3C8D' width='100px' heigth='100px' />
     },
     {
-        title: 'Servicio de atención al cliente 24/7',
-        description: 'Atención al cliente uno a uno, todas tus preguntas serán atendidas puntualmente',
+        title: 'Soporte 24/7',
+        description: 'Una persona siempre estará resolviendo tus dudas, no una máquina.',
         icon: <ClientService24 color='#1B3C8D' width='100px' heigth='100px' />
     },
     {
@@ -29,6 +29,7 @@ const SectionThreeCompany = () => {
         description: 'Disfruta de la protección exclusiva de la plataforma. Más garantías en transacciones.',
         icon: <ClientVerify color='#1B3C8D' width='100px' heigth='100px' />
     }
+    
 
     ]
     return (
@@ -43,9 +44,9 @@ const SectionThreeCompany = () => {
                 </p>
                 <h2 className='h2-register-section-three' >Registrate y recibe un bono de $100</h2>
                 <div className='container-boton-beneficios' >
-                    <Button className='btn-registrar-section-three' >
+                <a href='https://ui.kiire.apstage.net/signup'><Button className='btn-registrar-section-three' >
                         Crea tu cuenta <ArrowRigth color='white' width='20px' heigth='20px' />
-                    </Button>
+                    </Button></a>
                 </div>
             </Col>
             <Col className='container-card-beneficios' span={12} style={{ marginBottom: '60px', textAlign: 'left', paddingLeft: '50px' }}>

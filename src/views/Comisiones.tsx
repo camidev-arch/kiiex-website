@@ -8,15 +8,16 @@ import HeaderKx from '../components/HeaderKx';
 
 const tyccontent = () => {
     return (
-      <div style={{ color: 'black', marginTop: '12%', marginBottom:'0px' }}>
+      
+      <div style={{ color: 'black', marginTop: '0%', marginBottom:'0px' }}>
         <HeaderKx />
         
-        <h1 style={{textAlign:'center', marginBottom:'2%'}} >Comisiones </h1>
-        <p style={{textAlign:'center', marginBottom:'7%', marginRight:'14%', marginLeft:'14%', fontSize:'20px'}} >En KIIEX las soluciones están hechas a la medida, por eso creamos varios tipos de
+        <h1 className='fee-title' style={{textAlign:'center', marginBottom:'2%', marginTop:'15%'}} > Comisiones </h1>
+        <p className='fee-p' style={{textAlign:'center', marginBottom:'7%', marginRight:'14%', marginLeft:'14%', fontSize:'20px'}} >En KIIEX las soluciones están hechas a la medida, por eso creamos varios tipos de
         comisiones que disminuyen cada vez que tu volumen aumenta.
         Ten presente que nos basamos en una estructura Maker-Taker, a la cual se suma que
         nuestras tarifas piensan siempre en el trader, su tiempo, sus recursos y sus beneficios.</p>
-        <h3 style={{textAlign:'center', marginBottom:'1%'}} >Conoce aquí los detalles de las comisiones</h3>
+        <h3 className='fee-sub' style={{textAlign:'center', marginBottom:'1%'}} >Conoce aquí los detalles de las comisiones</h3>
         <div className='img-comision-container'>
         <img style={{margin:'auto', display: 'block', marginTop:'2%'}} src={fee1} width="" height="400px" alt="Descripción de la imagen" />
         </div>

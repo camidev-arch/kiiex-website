@@ -16,7 +16,7 @@ const CARDS = [
         icon: (color: string) => <FastConfigIcon width='50px' heigth='50px' color={color} />
     },
     {
-        title: 'Conversión Fácil',
+        title: 'Conversión sencilla',
         description: 'Puedes cambiar tus criptomonedas por efectivo con nuestro producto gestionado por KIIEX.',
         icon: (color: string) => <TransaccionEficaz width='50px' heigth='50px' color={color} />
     },
@@ -36,11 +36,11 @@ const SectionTwoCompany = () => {
                         KII EXCHANGE
                     </h1>
                     <h1 className='subtitle-section-two-company' >
-                        <b>Somos el aliado cripto más confiable para tu negocio</b>
+                        <b>Somos el aliado crypto más confiable para tu negocio</b>
                     </h1>
                     <p className='p-section-two-company'>
-                        Hemos desarrollado la herramienta más adecuada para que tu empresa comience a
-                        aceptar todos los pagos con las criptomonedas más populares
+                    Con nuestro ecosistema puedes recibir crypto como método de pago en tu negocio. Con
+                    KIIEX puedes monetizar tus KII cada vez que lo desees de manera fácil y segura.     
                     </p>
                 </Col>
             </Row>
@@ -56,7 +56,7 @@ const SectionTwoCompany = () => {
                         <Title className='title-col-two-two' >
                             ¡Comienza hoy mismo!
                         </Title>
-                        <Button className='boton-comienza-ahora2' style={{ backgroundColor: 'white', height: '50px', width: '230px',  fontSize: '20px', margin: '10px' }}>Regístrate aquí <ArrowRigth color='white' width='20px' heigth='20px' /></Button>
+                        <a href='https://ui.kiire.apstage.net/signup'><Button className='boton-comienza-ahora2' style={{ backgroundColor: 'white', height: '50px', width: '230px',  fontSize: '20px', margin: '10px' }}>Regístrate aquí <ArrowRigth color='white' width='20px' heigth='20px' /></Button></a>
                     </div>
                 </Col>
 

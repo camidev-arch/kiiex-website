@@ -18,21 +18,18 @@ import { ArrowRightOutlined } from '@ant-design/icons'
 
 const SectionOneCompany = () => {
     return (
-        <Row className='main-row-one-company' >
+        <Row id='top' className='main-row-one-company' >
             <Col className='column-one-one' xs={24} md={12} lg={14} span={14} >
                 <Card className='card-style' bodyStyle={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', width: '100%', padding: '0px', height: '100%' }} style={{ height: '100%' }}>
                     <h1 className='main-title2' >
-                        ¡Acepta criptomonedas<br></br> en tan solo segundos!
+                    ¿Tienes un negocio y quieres recibir crypto?<br></br>Con nuestro ecosistema puedes hacerlo.
                     </h1>
                     <p className='p-company-one'>
-                        Herramientas empresariales avanzadas para<br></br> potenciar los pagos con criptomonedas.
+                        A través de KIIEX podrás monetizar todos<br></br>tus ingresos en cuestión de segundos.
                     </p>
                     <Row style={{ width: '100%' }}>
-                        <Col xs={24} md={11} lg={11}>
-                            <input className='input-one1' placeholder={'Email'}></input>
-                        </Col>
                         <Col xs={24} md={8} lg={8} style={{display:'flex', justifyContent:'center'}}>
-                            <Button className='boton-one1' >Comenzar Ahora <ArrowRightOutlined ></ArrowRightOutlined></Button>
+                        <a href='https://ui.kiire.apstage.net/login'><Button className='boton-one1' >Escríbenos <ArrowRightOutlined ></ArrowRightOutlined></Button></a>
                         </Col>
                     </Row>
                 </Card>

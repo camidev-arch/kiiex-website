@@ -11,33 +11,33 @@ import Soporte from '../assets/icons/Soporte'
 
 const CARDS = [
     {
-        title: 'Almacenamiento Seguro',
-        description: 'Guarda tus monedas. Tus activos digitales estarán seguros siempre en tu control.',
+        title: 'Registro Rápido y Seguro',
+        description: 'El mercado financiero está esperando por ti y estamos seguros que quieres acceder sin procesos largos ni complejos.',
         icon: (color: string) => <SafeStorage width='50px' heigth='50px' color={color} />
     },
     {
-        title: 'Compra y vende',
-        description: 'Más de 20 monedas fiat mediante transferencias bancarias y tarjetas débito o crédito',
+        title: 'Comisiones EXtremadamente atractivas',
+        description: 'Revisa nuestro cuadro de comisiones, y entenderás por qué somos tan competitivos siempre pesando en tu beneficio.',
         icon: (color: string) => <CompraVende width='50px' heigth='50px' color={color} />
     },
     {
-        title: 'Experiencia de Usuario',
-        description: 'Con una interfaz que hace fácil cada paso.',
+        title: 'EXperiencia intuituva y fácil',
+        description: 'Dinamismo, simplicidad y adaptación en cada recursos que tenemos tanto a nivel gráfico como a nivel de operaciones.',
         icon: (color: string) => <UserXP width='50px' heigth='50px' color={color} />
     },
     {
-        title: 'Transacciones Eficaces',
-        description: 'Todos tus movimientos seguros y al instante.',
+        title: 'Tus monedas favoritas',
+        description: 'Varios pares de criptomonedas están disponibles para que siempre tengas opciones, pensando siempre en tus beneficios.',
         icon: (color: string) => <TransaccionEficaz width='50px' heigth='50px' color={color} />
     },
     {
-        title: 'Comunidad Global',
-        description: 'De Latinoamérica para el mundo entero.',
+        title: 'Estructura segura',
+        description: 'Una plataforma que se adapta a ti y a tu estilo de trading, siempre pensando en la seguridad como base del trading.',
         icon: (color: string) => <ComunidadGlobal width='50px' heigth='50px' color={color} />
     },
     {
-        title: 'Soporte Técnico',
-        description: 'Nuestro equipo de soporte estará 24/7 y de manera directa.',
+        title: 'Soporte de verdad',
+        description: 'Hablarás con personas, no con máquinas, lo cual hace que nuestro servicio de soporte humano sume a tu tranquilidad.',
         icon: (color: string) => <Soporte width='50px' heigth='50px' color={color} />
     }
 
@@ -47,12 +47,12 @@ const SectionThree = () => {
     return (
         <>
             <Row className='row-center main-row-three' >
-                <Col span={16} style={{ paddingTop: '100px', marginBottom: '60px' }}>
-                    <h1>
-                        <b className='title-three-one' style={{fontSize:'20px !important', textAlign:'center'}}>¡El Exchange Latinoamericano que está impactando al mundo!</b>
-                    </h1>
+                <Col span={16} style={{ paddingTop: '100px', marginBottom: '60px', maxWidth:'0 !important' }}>
+                    <h2>
+                        <b className='title-three-one' style={{fontSize:'40px !important', textAlign:'center'}}>Los beneficios que tenemos para ti no los encontrarás en ningún otro lugar</b>
+                    </h2>
                     <p className='p-three-one' >
-                    Pensamos en los usuarios, en su tiempo, en sus recursos y sus beneficios.
+                    Pensamos en el tiempo y recursos de nuestros usuarios, por eso tenemos:
                     </p>
                 </Col>
             </Row>

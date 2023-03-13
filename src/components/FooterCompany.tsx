@@ -124,14 +124,14 @@ const FooterCompany = () => {
                 </div>
             </div> */}
             <Grid className='footerUniversal' container spacing={1} style={{}}>
-                <Grid item lg={3} style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-                    <Image style={{ width: '200px', marginTop: '10px', marginBottom: '20px' }} src={logo} preview={false} >
+                <Grid item lg={3} style={{ display: 'flex', justifyContent: 'left', width: '100%' }}>
+                    <Image style={{ width: '200px', marginTop: '10px', marginBottom: '20px', marginLeft:'35%' }} src={logo} preview={false} >
 
                     </Image>
                 </Grid>
                 <Grid item lg={3} style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
                     <Title className='title-footer' level={2} style={{ paddingTop: '10px' }}>
-                        Sobre KIIEX
+                        Sobre KIIEX 
                     </Title>
                 </Grid>
                 <Grid className='title-footer' item lg={3} style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
@@ -145,7 +145,7 @@ const FooterCompany = () => {
                     </Title>
                 </Grid>
                 <Grid item lg={3} style={{ display: 'flex', justifyContent: 'center', width: '200px', }}>
-                    <p style={{ fontSize: '17px', maxWidth: '250px', marginLeft: '35px' }}>
+                    <p style={{ fontSize: '16px', maxWidth: '270px', marginLeft: '35px' }}>
                         Somos el Exchange más seguro, rápido y fácil de usar. Cambiamos el mundo una operación a la vez.
                     </p>
                 </Grid>
@@ -180,10 +180,13 @@ const FooterCompany = () => {
                 <Grid item lg={3} style={{ display: 'flex', justifyContent: 'center', width: '100%', paddingRight: '20px' }}>
                     <ul className='footerMain' style={{ listStyle: 'none' }}>
                         <li className='list-item'>
+                        <a href='https://foro.lanzamientokii.com/'>
                             <Typography className='p-one menuItem'>
                                 Foro de Soporte
                             </Typography>
+                        </a>   
                         </li>
+                        
                         <li className='list-item'>
                         <NavLink to={location.pathname == '/terminosycondiciones' ? '/terminosycondiciones' : '/terminosycondiciones'}>
                             <Typography className='p-one menuItem'>
@@ -210,9 +213,11 @@ const FooterCompany = () => {
                             </Typography>
                         </li>
                         <li className='list-item'>
+                        <a href='https://www.instagram.com/kiiexchange/'>
                             <Typography className='p-one menuItem'>
                                 Comunidad
                             </Typography>
+                        </a>
                         </li>
                         <li className='list-item'>
                             <Typography className='p-one menuItem'>
@@ -225,9 +230,11 @@ const FooterCompany = () => {
                 <Grid item lg={3} style={{ display: 'flex', justifyContent: 'center', width: '200px', }}>
 
                     <div  style={{ fontSize: '17px', minWidth: '330px', display: 'flex', justifyContent: 'flex-end' }}>
+                    <a href='https://ui.kiire.apstage.net/signup'>
                         <Button className='btnRegistrarSix2' style={{}}>
                             Registrarse
                         </Button>
+                    </a>
                     </div>
                 </Grid>
                 <Grid item lg={3} style={{ display: 'flex', justifyContent: 'center', width: '200px', }}>
@@ -248,13 +255,15 @@ const FooterCompany = () => {
                     <Image style={{ width: '200px', marginTop: '10px', marginBottom: '20px' }} src={logo} preview={false} >
 
                     </Image>
-                    <p style={{ fontSize: '17px', maxWidth: '250px', textAlign:'center' }}>
-                        Somos el cripto exchange más seguro, rápido y facil de operar, comienza hoy mismo
+                    <p style={{ fontSize: '14px', maxWidth: '250px', textAlign:'center' }}>
+                    Somos el Exchange más seguro, rápido y fácil de usar. Cambiamos el mundo una operación a la vez.
                     </p>
                     <div className='container-btn-footer' style={{  }}>
+                    <a href='https://ui.kiire.apstage.net/signup'>
                         <Button className='btnRegistrarSix2' style={{}}>
                             Registrarse
                         </Button>
+                    </a>
                     </div>
 
 
@@ -295,19 +304,25 @@ const FooterCompany = () => {
                     </Title>
                     <ul className='footerMain' style={{ listStyle: 'none',padding:0 }}>
                     <li className='list-item'>
+                    <a href='https://foro.lanzamientokii.com/'>
                             <Typography className='p-one menuItem'>
-                                Tutoriales
+                                Foro de Soporte
                             </Typography>
+                    </a>
                         </li>
                         <li className='list-item'>
+                        <NavLink to={location.pathname == '/terminosycondiciones' ? '/terminosycondiciones' : '/terminosycondiciones'}>
                             <Typography className='p-one menuItem'>
-                                Comunidad
+                                Terminos y condiciones
                             </Typography>
+                        </NavLink>
                         </li>
                         <li className='list-item'>
-                            <Typography className='p-one menuItem'>
-                                Blog de noticias
+                        <NavLink to={location.pathname == '/politicadeprivacidad' ? '/politicadeprivacidad' : '/politicadeprivacidad'}>
+                        <Typography className='p-one menuItem'>
+                                Politica de Privacidad
                             </Typography>
+                        </NavLink>
                         </li>
                     </ul>
                 </Grid>
@@ -322,9 +337,11 @@ const FooterCompany = () => {
                             </Typography>
                         </li>
                         <li className='list-item'>
+                        <a href='https://www.instagram.com/kiiexchange/'>
                             <Typography className='p-one menuItem'>
                                 Comunidad
                             </Typography>
+                        </a>
                         </li>
                         <li className='list-item'>
                             <Typography className='p-one menuItem'>

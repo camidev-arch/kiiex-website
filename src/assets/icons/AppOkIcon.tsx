@@ -2,7 +2,7 @@ import React from 'react'
 
 const AppOkIcon = ({width='40', height='40', color='gray'}:any) => {
   return (
-    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" 
+    <svg version="1.1" id="Capa_3" xmlns="http://www.w3.org/2000/svg" 
     viewBox="0 0 512 512" 
     fill={color} width={width} >
 

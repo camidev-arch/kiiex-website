@@ -8,18 +8,18 @@ import AppOkIcon from '../assets/icons/AppOkIcon'
 
 const SectionFourPeople = () => {
     const CARDS: IPropsCards[] = [{
-        title: 'Una APP estable y segura a tu alcance',
-        description: 'Con nuestro exchange no experimentarás las molestas caídas, siempre estamos online',
+        title: 'Una App estable y segura a tu alcance',
+        description: 'No experimentarás molestias, demoras o caídas de nuestra plataforma.',
         icon: <AppOkIcon color='#00103B' width='100px' heigth='300px' />
     },
     {
-        title: 'Ahorro fácil con grandes recompensas',
-        description: 'Conserva tus activos como KII, USDC, USDT y comienza a recibir beneficios de inmediato',
-        icon: <AhorroIcon color='#00103B' width='100px' heigth='100px' />
+        title: 'Pagos instantáneos',
+        description: 'Procesa tus pagos de manera rápida, segura y con una comisión pensada en tu bienestar.',
+        icon: <AhorroIcon color='#00103B' width='140px' heigth='100px' />
     },
     {
-        title: 'Pagos instantáneaos por menos del 1%',
-        description: 'Procesa tus pagos de manera facil y rapida por menos del 1% de comision',
+        title: 'Pagos instantáneos',
+        description: 'No necesitas buscar herramientas por fuera, todo lo tienes aquí.',
         icon: <PayIcon color='#00103B' width='100px' heigth='140px' />
     }
 
@@ -28,11 +28,11 @@ const SectionFourPeople = () => {
         <Row className='row-center main-row-three' style={{ paddingRight: '12%', paddingLeft: '12%', paddingBottom: '100px' }} >
             <Col className='col-one-beneficios2' span={13} xl={13} lg={13} md={24} xs={24} >
 
-                <h1 style={{ fontSize: '46px',color:'#00103B' }}>
-                    <b style={{color:'#00103B'}}>¡Más que un exchange una app para ganar!</b>
+                <h1 className='title-ben' style={{ fontSize: '46px',color:'#00103B' }}>
+                    <b style={{color:'#00103B'}}>Coin, Wallet y Exchange, KII es todo un ecosistema para ti.</b>
                 </h1>
                 <p className='p-one-people-six' style={{ fontSize: '18px' }}>
-                    No necesitas una fortuna para acceder a nuestros productos financieros, comienza creando una cuenta en pocos pasos
+                Para acceder a nuestras soluciones solo debes empezar por crear tu cuenta totalmente gratis.
                 </p>
                 <div className='cardContainer'>
                 {CARDS.map(({ description, icon, title }) => {

@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ClientService24 = ({ width='40', color='blue', heigth='40'}) => {
+const ClientService24 = ({ width='30', color='blue', heigth='40'}) => {
   return (
-	<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
-	viewBox="0 0 512 512" height={heigth} width={width} fill={color} >
+	<svg version="1.1" id="Capa_2" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
+	viewBox="0 0 512 512" height={heigth} width='80px' fill={color} >
 
 <g>
    <path className="st0" d="M451.23,232.09h-19.92v-39.84c0-43.94-35.75-79.69-79.69-79.69V20.92c0-11-8.92-19.92-19.92-19.92

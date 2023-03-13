@@ -17,13 +17,16 @@ const FooterM = () => {
                         </li>
                         <li>
                             <Typography  className='p-one'>
-                                Somos el cripto exchange más seguro, rápido y facil de operar, comienza hoy mismo
+                             Somos el Exchange más seguro, rápido y fácil de usar. Cambiamos el mundo una operación a la vez.
                             </Typography>
                         </li>
                         <li>
+                        <a href='https://ui.kiire.apstage.net/signup'>
                         <Button className='btnRegistrarSix2'>
-               Registrarse
-              </Button>
+                         Registrarse
+                         </Button>
+                        </a>
+
                         </li>
                         
                     </ul>

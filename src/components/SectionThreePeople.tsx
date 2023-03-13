@@ -162,7 +162,7 @@ const SectionThreePeople = () => {
                             <Grid item xs={12} md={5} style={{ display: 'flex', alignItems: 'center', flexDirection:'column', justifyContent:'center', gap:'20px' }}>
                                 <section className='sectionThree'>
                                 <label style={{ fontSize: '18px', color:'#00103B', fontWeight: 500, maxWidth: '150px',lineHeight:'20px', }}>Rendimiento anual (APY)</label>
-                                <label style={{ fontSize: '30px', fontWeight:'bolder',color:'#2B193D',  maxWidth: '150px',paddingTop:'2px',paddingBottom:'2px',paddingInline:'10px',background:'white',minWidth:'120px'   }}>{APY}</label>
+                                <label style={{ marginLeft:'10px', fontSize: '30px', fontWeight:'bolder',color:'#2B193D',  maxWidth: '150px',paddingTop:'2px',paddingBottom:'2px',paddingInline:'10px',background:'white',minWidth:'120px'   }}>{APY}</label>
                                 </section>
                                 <section className='sectionThree'>
                                 <label style={{ fontSize: '18px', color:'#00103B', fontWeight: 500, maxWidth: '160px',lineHeight:'20px' }}>Recompensa al finalizar el plazo</label>
@@ -170,9 +170,9 @@ const SectionThreePeople = () => {
                                 <label style={{ fontSize: '30px', fontWeight:'bold', color:'#8CC93E', maxWidth: '150px',paddingTop:'2px',paddingBottom:'2px',background:'white', minWidth:'150px' }}>{resultado+'+'}</label>
                                 </section>
                                 <section className='sectionThree'>
-                                <label style={{ fontSize: '18px', color:'#00103B', fontWeight: 500, maxWidth: '160px',lineHeight:'20px', marginTop: '12px' }}>Aproximado a</label>
-                                <label style={{ fontSize: '30px', fontWeight:'bolder',color:'#2B193D',  maxWidth: '150px',paddingTop:'2px',paddingBottom:'2px',paddingInline:'10px',background:'white'}}>{'USDT'}</label>
-                                <label style={{ fontSize: '30px', fontWeight:'bold', color:'#8CC93E', maxWidth: '150px',paddingTop:'2px',paddingBottom:'2px',background:'white', minWidth:'150px' }}>{setearMiles2(Number(resultado)*0.20,2,',','.')+'+'}</label>
+                                <label className='label-res1' style={{fontSize: '18px', color:'#00103B', fontWeight: 500, maxWidth: '160px',lineHeight:'20px', marginTop: '12px' }}>Aproximado a</label>
+                                <label className='label-res2' style={{ marginLeft:'30px', fontSize: '30px', fontWeight:'bolder',color:'#2B193D',  maxWidth: '150px',paddingTop:'2px',paddingBottom:'2px',paddingInline:'10px',background:'white'}}>{'USDT'}</label>
+                                <label className='label-res3' style={{ fontSize: '30px', fontWeight:'bold', color:'#8CC93E', maxWidth: '150px',paddingTop:'2px',paddingBottom:'2px',background:'white', minWidth:'150px' }}>{setearMiles2(Number(resultado)*0.20,2,',','.')+'+'}</label>
                                 </section>
                           
                             </Grid>

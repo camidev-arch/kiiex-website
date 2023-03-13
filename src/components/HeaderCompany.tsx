@@ -44,12 +44,12 @@ const HeaderCompany = () => {
                             <Link to={'/'}><Typography className='menuItem2' style={{ fontWeight: 'bold', fontSize: '17px' }}>Inicio</Typography></Link>
                             <Link to={'/cuentaEmpresa'}><Typography className='menuItem2Active' style={{ fontWeight: 'bold', fontSize: '17px' }}>Empresa</Typography></Link>
                             <Link to={'/personas'}><Typography className='menuItem2' style={{ fontWeight: 'bold', fontSize: '17px' }}>Personas</Typography></Link>
-                            <Link to='' ><Typography className='menuItem2' style={{ fontWeight: 'bold', fontSize: '17px' }}>Aprende</Typography></Link>
+                            <Link to={'/comisiones'} ><Typography className='menuItem2' style={{ fontWeight: 'bold', fontSize: '17px' }}>Comisiones</Typography></Link>
                             <a  href='https://foro.lanzamientokii.com/' target={'_blank'} ><Typography className='menuItem2' style={{ fontWeight: 'bold', fontSize: '17px' }}>Soporte</Typography></a>
                         </div>
                         <div style={{ display: 'flex' }}>
-                            <Link to={'/Soon'}><Typography className='menuItem2' style={{ fontWeight: 'bold', fontSize: '17px', paddingTop: '10px' }}>Iniciar Sesion</Typography></Link>
-                            <Button onMouseOver={()=>setTextBtn('¡Próximamente!')} onMouseLeave={()=>{setTextBtn('Registro')}} className='boton-register2' style={{ fontSize: '15px', height: '40px', marginTop: '3px' }}>{textBtn}</Button>
+                            <a href='https://ui.kiire.apstage.net/login'><Typography className='menuItem2' style={{ fontWeight: 'bold', fontSize: '17px', paddingTop: '10px' }}>Iniciar Sesion</Typography></a>
+                            <a href='https://ui.kiire.apstage.net/signup'><Button onMouseLeave={()=>{setTextBtn('Registro')}} className='boton-register2' style={{ fontSize: '15px', height: '40px', marginTop: '3px' }}>{textBtn}</Button></a>
                         </div></Content>
 
                 </Content>
